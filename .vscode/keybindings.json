@@ -1,0 +1,13 @@
+[
+  {
+    "key": "ctrl+shift+b",
+    "command": "workbench.action.tasks.build",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+z",
+    "command": "workbench.action.tasks.runTask",
+    "args": "Git Commit & Push",
+    "when": "editorTextFocus"
+  }
+]
