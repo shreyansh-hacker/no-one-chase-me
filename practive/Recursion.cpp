@@ -64,8 +64,28 @@ int fibonacci(int n){
     return fibonacci(n-1)+fibonacci(n-2);
 } 
 
+// print all subsequences using recursion
+void printF(int indx,vector<int>ds,int arr[],int n){
+    if (indx==n){
+        for (auto it:ds) {
+            cout << it <<" ";
+        }
+            if (ds.size()==0){
+                cout<<"{}";
+             }
+        cout<<endl;
+        return;
+    }
+    //  not pick or not take condition , this element is not added in subsequences
+    printF(indx+1,ds,arr,n);
+    // take or pick the particular index into the subsequences
+    ds.push_back(arr[indx]);
+    printF(indx+1,ds,arr,n);
+    ds.pop_back();
+}
 int main (){
-    int n;
-    cin>>n;
-    cout<<fibonacci(n);
+    int arr[]={3,2,1};
+    int n=3;
+    vector <int> ds;
+    printF(0,ds,arr,n);
 }
