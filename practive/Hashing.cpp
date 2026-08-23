@@ -23,5 +23,21 @@ int main(){
     //     cout<<hash[number]<<endl;
     // }
  
+    // character hashing
+    string s;
+    cin>>s;
+    // precompute 
+    int hash [256]={0};
+    for (int i=0;i<s.size();i++){
+        hash[s[i]]++;
+    }
+    // fetch
+    int q;
+    cin>>q;
+    while(q--){
+        char c;
+        cin>>c;
+        cout<<hash[c]<<endl;
+    }
 
 }
