@@ -1,6 +1,15 @@
 #include<bits/stdc++.h>
 using namespace std;
-
+void freq (int arr[],int n){
+    unordered_map <int ,int> map;
+    for (int i=0;i<n;i++){
+        map[arr[i]]++;
+    }
+    for (auto it: map){
+        cout<<it.first<<" "<<it.second<<endl;
+    }
+  
+}
 int main(){
     // number hashing
     // int n;
@@ -59,5 +68,12 @@ int main(){
     //     cout<<mpp[number]<<endl;
     // }
 
-    
+    // Count frequency of each element in the array
+    int n;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    freq(arr,n);
 }
