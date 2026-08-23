@@ -24,20 +24,39 @@ int main(){
     // }
  
     // character hashing
-    string s;
-    cin>>s;
-    // precompute 
-    int hash [256]={0};
-    for (int i=0;i<s.size();i++){
-        hash[s[i]]++;
+    // string s;
+    // cin>>s;
+    // // precompute 
+    // int hash [256]={0};
+    // for (int i=0;i<s.size();i++){
+    //     hash[s[i]]++;
+    // }
+    // // fetch
+    // int q;
+    // cin>>q;
+    // while(q--){
+    //     char c;
+    //     cin>>c;
+    //     cout<<hash[c]<<endl;
+    // }
+
+    // number hashing using map 
+    int n;
+    cin>>n;
+    int arr[n];
+    map<int,int>mpp;
+    for (int i=0;i<n;i++){
+        cin>>arr[i];
+        // precompute
+        mpp[arr[i]]++;
     }
-    // fetch
     int q;
     cin>>q;
     while(q--){
-        char c;
-        cin>>c;
-        cout<<hash[c]<<endl;
+        int number ;
+        cin>>number;
+        cout<<mpp[number]<<endl;
     }
+
 
 }
