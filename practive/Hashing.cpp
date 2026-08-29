@@ -10,6 +10,7 @@ void freq (int arr[],int n){
     }
   
 }
+
 int main(){
     // number hashing
     // int n;
@@ -69,11 +70,14 @@ int main(){
     // }
 
     // Count frequency of each element in the array
-    int n;
-    cin>>n;
-    int arr[n];
-    for(int i=0;i<n;i++){
-        cin>>arr[i];
-    }
-    freq(arr,n);
+    // int n;
+    // cin>>n;
+    // int arr[n];
+    // for(int i=0;i<n;i++){
+    //     cin>>arr[i];
+    // }
+    // freq(arr,n);
+
+    
+
 }
