@@ -312,7 +312,7 @@ int main(){
     cin>>t;
 while (t--){
         cin>>n;
-        print12(n);
+        print8(n);
 }
 
 }
